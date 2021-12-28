@@ -1246,6 +1246,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 .overlay .popup {
   height: 500px;
@@ -1285,4 +1286,35 @@
   background-color: #FF715B;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.overlay .popup__on {
+  background: url("../images/world/bg.png") center/cover no-repeat;
+  padding: 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.overlay .popup__on-title {
+  font-family: "Product Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+}
+.overlay .popup__bot {
+  padding: 50px 100px 50px;
+}
+.overlay .popup__bot-text {
+  margin-bottom: 15px;
+  font-family: "Product Sans", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #A79997;
 }
