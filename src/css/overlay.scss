@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   .popup{
     height: 500px;
     width: 400px;
@@ -40,6 +41,23 @@
         background-color: #FF715B;
         transform: rotate(45deg);
       }
+    }
+    &__on{
+      background: url("../images/world/bg.png") center/cover no-repeat ;
+      padding: 50px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-title{
+        @include text($sans, 600, 24px, 33px, #000);
+      }
+    }
+    &__bot{
+      padding: 50px 100px 50px;
+     &-text{
+       margin-bottom: 15px;
+       @include text($sans, normal, 24px, 36px, #A79997);
+     }
     }
   }
 }
