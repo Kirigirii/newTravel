@@ -1,0 +1,81 @@
+.footer{
+  padding: 194px 100px 0 ;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @include text($noto ,bold, 28px, 26px, #000);
+    margin-bottom: 35px;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    &-logo{
+      width: 231px;
+      height: 60.74px;
+    }
+    &-text{
+      @include text($sans, normal, 18px, 26px, #A79997);
+      margin: 43px 0 30px;
+    }
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      &-icon{
+        color: #FF715B;
+      }
+    }
+    &-link{
+      @include text($sans, normal, 18px, 26px, #A79997);
+      margin-left: 15px;
+    }
+  }
+  &__center{
+    display: flex;
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+    &-link{
+      @include text($sans, normal, 18px, 42px, #A79997);
+      transition: .5s;
+      &:hover{
+        color: #FF715B;
+        transition: .5s;
+      }
+    }
+  }
+  &__center-col1{
+    margin-right: 70px;
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    &-form{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    &-input{
+      padding: 15px;
+      outline: none;
+      background: #F8F8F8;
+      border: 1px solid #F5EBE9;
+      @include text($noto, 600, 18px, 25px, #FF715B);
+    }
+  }
+  &__bot{
+    padding: 127px 0 30px;
+    text-align: center;
+    border-top: 1px ;
+    &-title{
+      @include text($sans, normal, 18px, 26px, #A79997);
+      span{
+        color: #FF715B;
+      }
+    }
+  }
+}

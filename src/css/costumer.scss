@@ -1,0 +1,154 @@
+.costumers{
+  padding: 200px 0 342px;
+  margin-bottom: 300px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    width: 33.33333%;
+    position: relative;
+    &-cirle{
+      &-one{
+        width: 110px;
+        height: 110px;
+        background: url("../images/costumers/3bg.png") center/cover no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 156px;
+        &-img1{
+          position: absolute;
+          top: 22px;
+          left: 50%;
+          transform: translate(-50%,);
+        }
+      }
+      &-two{
+        width: 106px;
+        height: 71px;
+        background: url("../images/costumers/4bg.png") center/cover no-repeat;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        &-img2{
+          position: absolute;
+          top: 3px;
+          left: 50%;
+          transform: translate(-50%,);
+        }
+      }
+      &-three{
+        width: 150px;
+        height: 150px;
+        background: url("../images/costumers/2bg.png") center/cover no-repeat;
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        &-img3{
+          position: absolute;
+          top: 25px;
+          left: 50%;
+          transform: translate(-50%,);
+        }
+      }
+      &-four{
+        width: 140px;
+        height: 140px;
+        background: url("../images/costumers/5bg.png") center/cover no-repeat;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        &-img4{
+          position: absolute;
+          top: 25px;
+          left: 50%;
+          transform: translate(-50%,);
+        }
+      }
+    }
+  }
+  &__right{
+    position: relative;
+    width: 33.33333%;
+    &-circle{
+      &-first{
+        width: 123px;
+        height: 119px;
+        background: url("../images/costumers/right-1bg.png") center/cover no-repeat;
+        position: absolute;
+        top: 200px;
+        right: 200px;
+        &-img1{
+          position: absolute;
+          left: 50%;
+          top: 20px;
+          transform: translate(-50%,);
+        }
+      }
+      &-second{
+        width: 145px;
+        height: 145px;
+        background: url("../images/costumers/right-2bg.png") center/cover no-repeat;
+        position: absolute;
+        right: 0;
+        &-img2{
+          position: absolute;
+          left: 50%;
+          top: 24px;
+          transform: translate(-50%,);
+        }
+      }
+      &-third{
+        width: 140px;
+        height: 140px;
+        background: url("../images/costumers/right-3bg.png") center/cover no-repeat;
+        position: absolute;
+        right: 0;
+        top: 400px ;
+          &-img3{
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            transform: translate(-50%,);
+        }
+      }
+    }
+
+  }
+  &__title{
+    @include text($noto, 800, 48px, 65px, #2C2C2C);
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__carousel{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 690px;
+    z-index: 2;
+  }
+  &__card{
+    padding: 70px ;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0 20px 30px rgba(227, 202, 202, 0.3);
+    border-top: 11px solid #FF715B;
+    flex-wrap: wrap;
+    &-img{
+      margin:0 20px 50px 0;
+      width: 80px;
+      height: 80px;
+    }
+    &-title{
+      @include text($noto, bold, 24px, 33px, #000);
+    }
+    &-subtitle{
+      @include text($sans, bold, 18px, 22px, #FF715B);
+
+    }
+    &-text{
+      @include text($sans, normal, 24px, 36px, #A79997);
+    }
+  }
+}

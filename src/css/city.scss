@@ -1,0 +1,74 @@
+.city{
+  padding-bottom: 350px;
+  &__content{
+    display: flex;
+    align-items: flex-end;
+  }
+  &__info{
+    width: 30%;
+  }
+  &__title{
+    @include text($noto, 800, 48px, 65px,  #2C2C2C);
+    span{
+      color: #FF715B;
+    }
+  }
+  &__subtitle{
+    @include text($sans, normal, 18px, 26px, #A79997);
+    margin: 40px 0 60px;
+  }
+  &__row{
+    width: 70%;
+    display: flex;
+    column-gap: 30px;
+    &-img{
+     padding: 340px 170px 30px 30px;
+     &_cuba{
+       position: relative;
+       background: url("../images/city/Cuba-city 1.png") center/cover no-repeat;
+       animation: Cuba 3s;
+     }
+      &_paris{
+        position: relative;
+        background: url("../images/city/Paris-City.png") center/cover no-repeat;
+        animation: Paris 4s;
+      }
+      &_japan{
+        position: relative;
+        background: url("../images/city/japan.png") center/cover no-repeat;
+        animation: Japan 5s;
+      }
+    }
+    &-title{
+      @include text($noto, bold, 28px, 38px, #fff);
+    }
+  }
+}
+
+
+
+
+@keyframes Cuba {
+  from {
+    margin-left: 300%;
+  }
+  to {
+    margin-left: 80px;
+  }
+}
+@keyframes Paris {
+  from {
+    margin-left: 300%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes Japan{
+  from {
+    margin-left: 300%;
+  }
+  to {
+    margin-left: 0;
+  }
+}

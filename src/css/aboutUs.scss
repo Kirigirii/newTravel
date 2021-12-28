@@ -1,0 +1,124 @@
+.aboutUs{
+  padding-bottom: 259px;
+  .container{
+    position: relative;
+  }
+  &__content{
+    display: flex;
+    column-gap: 150px;
+  }
+  &__left{
+    position: relative;
+    &::after{
+      content: '';
+      background: url("../images/aboutUs/pattern.png") center/cover no-repeat;
+      width: 170px;
+      height: 170px;
+      position: absolute;
+      top: 600px;
+      left: -80px;
+      z-index: -1;
+    }
+    &::before{
+      content: '';
+      background: url("../images/aboutUs/Rectangle 25.png") center/cover no-repeat;
+      width: 142px;
+      height: 142px;
+      position: absolute;
+      top: -55px;
+      right: -80px;
+      z-index: -1;
+    }
+  }
+  &__right{
+    &-title{
+      @include text($noto, 800, 48px, 65px, #2C2C2C);
+      margin-bottom: 89px;
+    }
+    &-col{
+      &-title{
+        @include text($noto, 600px, 24px, 33px, #000);
+
+      }
+      &-subtitle{
+        @include text($sans, normal, 18px, 26px, #A79997);
+        position: relative;
+      }
+    }
+  }
+  &__circle{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    left: -91px;
+    top: 355px;
+  }
+  &__iconbg{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-right: 40px;
+    &-first{
+      background-color: #FF715B;
+    }
+    &-second{
+      background: #EDFAE3;
+    }
+    &-third{
+      background: #FFF8E3;
+    }
+  }
+}
+.icon-user{
+  color: #fff;
+}
+.icon-globe{
+  color: #65CE54;
+}
+.icon-headphones{
+  color: #FFC01E;
+}
+.accordion-item{
+  margin-bottom: 20px;
+  transition: 2s;
+  padding-bottom: 50px;
+  position: relative;
+  &::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #F1E0DD;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.accordion-item--active .accordion-item-title{
+  transition: 2s;
+
+}
+.accordion-item--active .accordion-item-content{
+  display: block;
+  transition: 2s;
+}
+.accordion-item-title{
+  display: flex;
+  align-items: center;
+  margin-bottom:25px ;
+  cursor: pointer;
+}
+.accordion-item-title span {
+  font-size: 35px;
+}
+.accordion-item-content{
+  height: 50px;
+  border-top: 0;
+  display: none;
+}
+
+.accordion-item-content .active{
+  display:block;
+}

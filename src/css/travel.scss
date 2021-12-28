@@ -1,0 +1,68 @@
+.travel {
+  padding: 235px 0 70px;
+  background: url("../images/travel/Bg (2).png") center/cover no-repeat;
+  .container{
+    position: relative;
+  }
+  &__content {
+    display: flex;
+  }
+  &__left{
+    width: 60%;
+    &-title{
+      @include text($noto, 800, 48px, 65px, #2C2C2C);
+      margin-bottom: 60px;
+    }
+    &-apple{
+      margin-left: 27px;
+    }
+  }
+  &__right{
+    display: flex;
+    width: 40%;
+    &-plane{
+      width: 425px;
+      height: 173px;
+      position: absolute;
+      left: 739px;
+      top: -200px;
+    }
+    &-phone{
+      display: flex;
+      flex-direction: column;
+      &-tel{
+        position: absolute;
+        z-index: 2;
+      }
+      &::before{
+        content: url("../images/travel/bagpack 1.png");
+        position: relative;
+        z-index: 4;
+        left: 30px;
+      }
+      &::after{
+        content: url("../images/header/logo.svg");
+        position: relative;
+        z-index: 4;
+        left: 50px;
+      }
+    }
+    &-tele{
+      display: flex;
+      position: absolute;
+      &::after{
+        content: url("../images/travel/phone2.png");
+        position: absolute;
+        left: 223px;
+        bottom: 400px;
+      }
+      &::before{
+        content: url("../images/travel/phone2apps.png");
+        position: relative;
+        z-index: 1;
+        left: 230px;
+        bottom: 400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.btn{
+  width: 200px;
+  height: 60px;
+  background: #FF715B;
+  @include text($noto, 500, 18px, 25px, #fff);
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

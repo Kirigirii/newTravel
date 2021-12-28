@@ -1,0 +1,62 @@
+.world{
+  padding: 285px 0 381px;
+  background: url("../images/world/bg.png") center/cover no-repeat;
+  &__content{
+    position: relative;
+  }
+  &__title{
+    @include text($noto, bold, 84px, 112px, #2C2C2C);
+    margin-bottom: 50px;
+  }
+  &__price{
+    padding: 45px 45px ;
+    display: flex;
+    width: 80%;
+    background: #fff;
+    box-shadow: 0 10px 30px 5px rgba(219, 200, 197, 0.2);
+    position: absolute;
+    right: 0;
+    bottom: -450px;
+  }
+  &__form{
+    display: flex;
+    column-gap: 60px;
+    &-city{
+      display: flex;
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 0.5px solid #F5EBE9;
+      margin-top: 10px;
+      @include text($noto, 600, 18px, 25px, #FF715B);
+    }
+    &-date {
+      display: flex;
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 0.5px solid #F5EBE9;
+      margin-top: 10px;
+      @include text($noto, 600, 18px, 25px, #FF715B);
+    }
+    &-input{
+      outline: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 0.5px solid #F5EBE9;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      @include text($noto, 600, 18px, 25px, #FF715B);
+      &::-webkit-input-placeholder {
+        color: #FF715B ;
+      }
+    }
+    &-title{
+      @include text($sans, normal, 16px, 19px, #A79997);
+    }
+  }
+}
